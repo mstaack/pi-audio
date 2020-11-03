@@ -4,7 +4,17 @@
 $ wget https://buildroot.org/downloads/buildroot-2020.08.1.tar.gz
 $ tar -xf buildroot-2020.08.1.tar.gz
 $ make raspberrypi3_defconfig
-$ make savedefconfig
+```
+
+# Change Settings
+
+```
+$ make menuconfig
+```
+
+# Save changes to source defconfig file
+```
+make savedefconfig
 ```
 
 # RT-Patch
