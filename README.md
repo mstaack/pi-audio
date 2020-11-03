@@ -24,7 +24,14 @@ $ make linux-menuconfig
 ```
 
 5. Change Kernel Configuration to use changes?!
-
+current:
+```
+BR2_LINUX_KERNEL_CUSTOM_TARBALL=y
+BR2_LINUX_KERNEL_CUSTOM_TARBALL_LOCATION="$(call github,raspberrypi,linux,1c64f4bc22811d2d371b271daa3fb27895a8abdd)/linux-1c64f4bc22811d2d371b271daa3fb27895a8abdd.tar.gz"
+BR2_LINUX_KERNEL_DEFCONFIG="bcm2709"
+```
+safe linux config somewhere?! select changed config?
+use BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES ?
 
 6. Fresh Build
 ```
