@@ -18,7 +18,7 @@ $ make savedefconfig
 ```
 
 # RT-Patch
-Change PREEMP Settings
+Select PREEMPT Type [Config](https://github.com/raspberrypi/linux/blob/rpi-5.4.y/kernel/Kconfig.preempt)
 ```
 $ make linux-menuconfig
 ```
