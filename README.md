@@ -1,6 +1,6 @@
 ## Setup
 
-### Download & Setup Buildroot.
+### Download & Setup Buildroot
 
 ```
 $ wget https://buildroot.org/downloads/buildroot-2020.08.1.tar.gz
@@ -8,13 +8,13 @@ $ tar -xf buildroot-2020.08.1.tar.gz
 $ make raspberrypi3_defconfig
 ```
 
-### Make Changes.
+### Make Changes
 
 ```
 $ make menuconfig
 ```
 
-### Save minimal changes to source defconfig file (./config/raspberrypi3_defconfig).
+### Save minimal changes to source defconfig file (./config/raspberrypi3_defconfig)
 ```
 $ make savedefconfig
 ```
@@ -25,7 +25,7 @@ Select PREEMPT Type [Config](https://github.com/raspberrypi/linux/blob/rpi-5.4.y
 $ make linux-menuconfig
 ```
 
-### Change Kernel Configuration to use changes?!.
+### Change Kernel Configuration to use changes?!
 current:
 ```
 BR2_LINUX_KERNEL_CUSTOM_TARBALL=y
@@ -35,17 +35,17 @@ BR2_LINUX_KERNEL_DEFCONFIG="bcm2709"
 safe linux config somewhere?! select changed config?
 use BR2_LINUX_KERNEL_CONFIG_FRAGMENT_FILES ?
 
-### Fresh Build.
+### Fresh Build
 ```
 $ make clean && time make all 2>&1 | tee build.log
 ```
 
-### Main Logs.
+### Main Logs
 ```
 $ tail -f build.log | grep ">>>"
 ```
 
-### SD-Card.
+### SD-Card
 ```
 $ sudo dd if=output/images/sdcard.img of=/dev/sdc bs=1M
 ```
