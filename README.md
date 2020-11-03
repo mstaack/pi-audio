@@ -7,6 +7,10 @@ $ make raspberrypi3_defconfig
 $ make savedefconfig
 ```
 
+# RT-Patch
+```
+make linux-menuconfig -> PREEMPT Settings
+```
 
 # Fresh Build
 ```
@@ -16,11 +20,6 @@ $ make clean && time make all 2>&1 | tee build.log
 # Logs
 ```
 $ tail -f build.log | grep ">>>"
-```
-
-# RT-Patch
-```
-make linux-menuconfig -> PREEMPT Settings
 ```
 
 # SD-Card
