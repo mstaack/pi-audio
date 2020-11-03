@@ -14,12 +14,13 @@ $ make menuconfig
 
 # Save changes to source defconfig file
 ```
-make savedefconfig
+$ make savedefconfig
 ```
 
 # RT-Patch
+Change PREEMP Settings
 ```
-make linux-menuconfig -> PREEMPT Settings
+$ make linux-menuconfig
 ```
 
 # Fresh Build
