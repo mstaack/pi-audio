@@ -1,4 +1,4 @@
-#Install
+# Install
 
 ```
 $ wget https://buildroot.org/downloads/buildroot-2020.08.1.tar.gz
